@@ -1,0 +1,13 @@
+mybatis作业简述
+一/
+1.动态生成sql，如where,if,foreach等，解析标签，执行判定，最后动态拼接成真正需要执行的sql语句
+2.支持，动态代理方式
+3.
+SimpleExecutor：每执行一次，开启一个Statement对象，用完立刻关闭。
+ReuseExecutor：就是重复使用Statement对象，用完不关闭。
+BatchExecutor：将所有sql都添加到批处理中，缓存了多个Statement对象，等待统一执行。
+4.
+一级缓存就是在当前sqlsession内维护一个map，当有非查询操作执行时候，清空该map
+二级缓存一般不用，不做赘述
+5.
+就是一个拦截器，继承接口添加在插件配置标签内

@@ -66,7 +66,7 @@ public class IPersistenceTest {
 
         //调用
         User user = new User();
-        user.setUsername("lsp01");
+        user.setUsername("lsp02");
         sqlSession.insert("com.lagou.dao.IUserDao.insert", user);
     }
 

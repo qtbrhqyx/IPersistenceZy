@@ -5,7 +5,7 @@
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/user?serverTimezone=Asia/Shanghai"></property>
         <property name="username" value="root"></property>
-        <property name="password" value="123456"></property>
+        <property name="password" value="******"></property>
     </dataSource>
 
     <!--存放mapper.xml的全路径-->
